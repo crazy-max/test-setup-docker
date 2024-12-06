@@ -1,0 +1,13 @@
+name: test
+
+on:
+  workflow_dispatch:
+  push:
+
+jobs:
+  docker:
+    runs-on: ubuntu-latest
+    steps:
+      -
+        name: Set up Docker
+        uses: crazy-max/ghaction-setup-docker@v3
